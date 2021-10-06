@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/recarga.css">
+    <title>Sistemas de recargas</title>
+</head>
+<body>
+    <header>
+        <hr>
+        <p class="titulo"><label>MOV</label>II</p>
+        <hr>
+    </header>
+
+    <section>
+        <div class="contenido_section">
+            <div class="caja1">
+                <div class="imagen2">
+                    <img src="images/foto.png" alt="foto de celular">
+                </div>
+                
+                <div class="contenido_texo">
+                    <p class="texto">!Comunica siempre a tus clientes los productos o servicios que vendes, para que ellos se enteren de lo que pueden encontrar en tu negocio y acudan a el siempre que lo necesiten, puedes utilizar carteles impresos o lonas, colocalos en un área visible para los clientes.!</p>
+                </div>
+            </div>
+            <div class="caja2">
+                <form onsubmit="return recarga_celular()">
+                    <input type="text" id="valor_recarga" placeholder="Inserte el valor de la recarga" class="barra" required>
+                    <input type="text" id="numero_cel" placeholder="Numero de celular" class="barra" required>
+                    <div class="check">
+                        <input type="Checkbox"  id="claro"><label for="claro" class="label">Claro</label>
+                        <input type="Checkbox"  id="movistar"> <label for="movistar" class="label">Movistar</label>
+                        <input type="Checkbox"  id="tigo" class="chec"><label for="tigo" class="label">Tigo</label>
+                    </div>
+
+                    <input type="submit" value="Enviar recarga" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <p id="resultado" class="result"></p>
+    <br>
+    <br>
+    <br>
+
+    <script>
+        function recarga_celular(){
+            let recarga = document.getElementById("resultado");
+            let valor_recarga = String(document.getElementById("valor_recarga").value);
+            let claro= String(document.getElementById("claro").value);
+            let movistar = String(document.getElementById("movistar").value);
+            let tigo = String(document.getElementById("tigo").value);
+            let numero_cel = parseInt(document.getElementById("numero_cel").value);
+            recarga.innerHTML += "Su recarga ha sido exitosa, su numero de celular es " + numero_cel + " y su recarga es de " + valor_recarga + "<br>" + "<br>";
+            return false;
+        }
+    </script>
+    
+</body>
+</html>

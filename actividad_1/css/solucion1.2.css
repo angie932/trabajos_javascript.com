@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d3cbcf;
+}
+
+header{
+    border: 1px solid rgba(230, 230, 230, 0);
+    height: 200px;
+    background-image: linear-gradient(330deg, #ff7f49 0, #ff6f46 16.67%, #fe5942 33.33%, #f23c3c 50%, #e50b37 66.67%, #db0036 83.33%, #d20038 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    color: #fff;
+}
+
+section{
+    border: 0px solid #fff;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    background-color: #d20038;
+    color: #fff;
+    padding: 15px 20px;
+    border: 2px solid rgb(105, 17, 17);
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Spartan', sans-serif;
+    transition: all .5s ease;
+}
+
+a:hover{
+    background-color: #582532;
+    transition: all .5s ease;
+}
+
+article{
+    margin-top: 40px;
+    border: 0px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido_form{
+    border: 0px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+}
+
+form{
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Spartan', sans-serif;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(56, 39, 39);
+    border-radius: 5px;
+}
+
+.btn{
+    width: 60%;
+    cursor: pointer;
+    background-color: #d20038;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    background-color: #572230;
+}
+
+.resultado{
+    border: 0px solid red;
+    height: auto;
+}
+
+.title{
+    font-size: 20px;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+    font-size: 20px;
+}
+
+hr{
+    width: 60%;
+    height: 1px;
+}

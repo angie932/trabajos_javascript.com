@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/solucion1.1.css">
+    <title>Area de un triangulo</title>
+</head>
+<body>
+    <header>
+        <p class="titulo">Area de un triangulo</p>
+        <section>
+            <a href="solucion1.html">Inicio</a>
+            <a href="solucion1.1.html">Calcular el area de un triangulo</a>
+            <a href="solucion1.2.html">Calcular el area de un cuadrado</a>
+            <a href="solucion1.3.html">Calcular el area de un poligono</a>
+        </section>
+    </header>
+
+    <article>
+        <div class="contenido_form">
+            <form onsubmit="return calcular_area()">
+                <input type="text" id="base" placeholder="Ingrese la base">
+                <input type="text" id="altura" placeholder="Ingrese la altura">
+                <input type="submit" value="Calcular" class="btn">
+            </form>
+            
+            <div class="resultado">
+                <p class="title">Resultado</p>
+                <hr>
+                <p class="result" id="resultado"></p>
+            </div>
+        </div>
+    </article>
+
+    <script>
+        function calcular_area(){
+            let resultado_area = document.getElementById("resultado");
+            let base = parseInt(document.getElementById("base").value);
+            let altura = parseInt(document.getElementById("altura").value);
+            let calcular_area_triangulo = (base * altura) / 2;
+            resultado_area.innerHTML += "El resultado es: " + calcular_area_triangulo + "<br>";
+            return false;
+        }
+    </script>
+</body>
+</html>

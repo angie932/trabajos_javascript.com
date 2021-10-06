@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Spartan:wght@600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d3cbcf;
+}
+
+header{
+    border: 1px solid rgba(230, 230, 230, 0);
+    height: 200px;
+    background-image: linear-gradient(330deg, #ff7f49 0, #ff6f46 16.67%, #fe5942 33.33%, #f23c3c 50%, #e50b37 66.67%, #db0036 83.33%, #d20038 100%);
+}
+
+.titulo{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Courgette', cursive;
+    color: #fff;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.contenido_a{
+    border: 0px solid red;
+    height: 300px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    background-color: #d20038;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Spartan', sans-serif;
+    transition: all .5s ease;
+}
+
+a:hover{
+    background-color: #582532;
+    transition: all .5s ease;
+}
